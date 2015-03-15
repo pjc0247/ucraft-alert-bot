@@ -7,7 +7,7 @@ def run cmd, *args
   end
 end
 
-result = JSON.parse(run("casperjs", "push.js"))
+result = JSON.parse(run("casperjs", "check.js"))
 
 exit if result["alert"] == false
 
